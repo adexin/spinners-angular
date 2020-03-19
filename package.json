@@ -1,0 +1,89 @@
+{
+  "name": "spinners-angular",
+  "version": "0.0.1",
+  "description": "Lightweight SVG/CSS spinners for Angular",
+  "scripts": {
+    "prepare": "npm run lint && npm run build",
+    "ng": "ng",
+    "start": "ng build --watch spinners-angular",
+    "build": "ng build --prod spinners-angular",
+    "test": "ng test spinners-angular",
+    "lint": "ng lint"
+  },
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "lib": "./dist/spinners-angular"
+  },
+  "keywords": [
+    "angular-spinners",
+    "angular-spinner",
+    "spinner-angular",
+    "spinners",
+    "spinner",
+    "loaders",
+    "loader",
+    "loading",
+    "loading spinners",
+    "loading spinner",
+    "progress",
+    "angular",
+    "angular 9",
+    "svg",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adexin/spinners-angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adexin/spinners-angular/issues",
+    "email": "info@adexin.com"
+  },
+  "author": {
+    "name": "Adexin",
+    "email": "info@adexin.com",
+    "url": "https://adexin.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "homepage": "demo.adexin.com/spinners/",
+  "peerDependencies": {
+    "@angular/common": ">9",
+    "@angular/core": ">9",
+    "@angular/platform-browser": ">9",
+    "@angular/platform-browser-dynamic": ">9",
+    "zone.js": "^0.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.900.7",
+    "@angular-devkit/build-ng-packagr": "~0.900.7",
+    "@angular/cli": "~9.0.7",
+    "@angular/common": "~9.0.7",
+    "@angular/platform-browser": "~9.0.7",
+    "@angular/platform-browser-dynamic": "~9.0.7",
+    "@angular/compiler": "~9.0.7",
+    "@angular/compiler-cli": "~9.0.7",
+    "@angular/core": "~9.0.7",
+    "@angular/language-service": "~9.0.7",
+    "@types/node": "^12.11.1",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "^5.1.2",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~2.1.0",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "ng-packagr": "^9.0.0",
+    "protractor": "~5.4.3",
+    "ts-node": "~8.3.0",
+    "tslint": "~5.18.0",
+    "typescript": "~3.7.5",
+    "zone.js": "~0.10.2"
+  },
+  "dependencies": {}
+}

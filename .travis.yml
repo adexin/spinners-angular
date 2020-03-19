@@ -1,0 +1,19 @@
+dist: trusty
+sudo: false
+language: node_js
+node_js:
+  - "10"
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+  chrome: stable
+cache:
+  directories:
+     - ./node_modules
+install:
+  - npm install
+script:
+  - npm run test -- --no-progress --watch=false --code-coverage --browsers=ChromeHeadlessCI && cat ./coverage/lcov.info | coveralls"

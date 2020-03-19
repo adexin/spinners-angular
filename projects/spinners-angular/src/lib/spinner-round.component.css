@@ -1,0 +1,8 @@
+@keyframes spinners-angular-round {
+  27%, 73% {
+    /* clean-css ignore:start */
+    r: 2px;
+    /* clean-css ignore:end */
+    stroke-width: 4;
+  }
+}

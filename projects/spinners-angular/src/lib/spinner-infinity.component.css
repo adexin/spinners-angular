@@ -1,0 +1,16 @@
+@keyframes spinners-angular-infinity {
+  0% {
+    stroke-dasharray: 1, 347;
+    stroke-dashoffset: 75;
+  }
+  25%, 75% {
+    stroke-dasharray: 17, 330;
+  }
+  50% {
+    stroke-dasharray: 1, 347;
+  }
+  100% {
+    stroke-dasharray: 1, 347;
+    stroke-dashoffset: 423;
+  }
+}

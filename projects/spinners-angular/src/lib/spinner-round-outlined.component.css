@@ -1,0 +1,8 @@
+@keyframes spinners-angular-round-outlined {
+  35%, 65% {
+    /* clean-css ignore:start */
+    r: 2px;
+    /* clean-css ignore:end */
+    stroke-width: 4;
+  }
+}

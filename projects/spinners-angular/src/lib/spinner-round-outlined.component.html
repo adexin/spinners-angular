@@ -1,0 +1,12 @@
+<svg *ngIf="enabled" fill="none" [ngStyle]="svgStyle" viewBox="0 0 66 66">
+  <circle
+    *ngFor="let animation of animations; index as i"
+    cx="33"
+    cy="33"
+    fill="none"
+    stroke="currentColor"
+    [attr.stroke-width]="strokeWidth(i)"
+    [attr.r]="animation.r"
+    [ngStyle]="circleStyle(animation)"
+  />
+</svg>
