@@ -1,0 +1,17 @@
+<svg *ngIf="enabled" fill="currentColor" [ngStyle]="svgStyle" viewBox="0 0 96 96">
+  <circle
+    *ngFor="let c of coords"
+    [attr.cx]="c.x"
+    [attr.cy]="c.y"
+    [attr.r]="2.5 * (thickness / 100)"
+    [attr.fill]="secondaryColor"
+  />
+  <g [ngStyle]="groupStyle">
+    <circle
+      *ngFor="let c of colorCoords; index as i"
+      [attr.r]="3.5 * (thickness / 100)"
+      [attr.cx]="c.x"
+      [attr.cy]="c.y"
+    />
+  </g>
+</svg>

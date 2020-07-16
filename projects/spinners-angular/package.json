@@ -1,0 +1,43 @@
+{
+  "name": "spinners-angular",
+  "version": "0.0.3",
+  "description": "SVG/CSS spinners for Angular",
+  "keywords": [
+    "angular-spinners",
+    "angular-spinner",
+    "spinner-angular",
+    "spinners",
+    "spinner",
+    "loaders",
+    "loader",
+    "loading",
+    "loading spinners",
+    "loading spinner",
+    "progress",
+    "angular",
+    "angular 9",
+    "svg",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adexin/spinners-angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adexin/spinners-angular/issues",
+    "email": "info@adexin.com"
+  },
+  "author": {
+    "name": "Adexin",
+    "email": "info@adexin.com",
+    "url": "https://adexin.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "homepage": "demo.adexin.com/spinners/angular",
+  "peerDependencies": {
+    "@angular/common": ">=9",
+    "@angular/core": ">=9",
+    "tslib": "^1.10.0"
+  }
+}
