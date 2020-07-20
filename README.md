@@ -5,8 +5,8 @@
 9 awesome spinners built as angular components. Server side rendering with Angular Universal, AOT, Ivy/NGCC and Angular Elements are supported.
 
 <p align="center">
-  <a href="http://adexin.github.io/spinners">
-	  <img src="https://i.imgur.com/xa7eWLW.gif" />
+  <a href="http://adexin.github.io/spinners/angular">
+    <img src="https://i.imgur.com/3n0wCwk.gif" />
   </a>
 </p>
 
