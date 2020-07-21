@@ -57,9 +57,9 @@ For angular element
 
 | Component | Example | Component | Example | Component | Example |
 |-----------|---------|-----------|---------|-----------|---------|
-|`sa-spinner-circular`|<img width="70" src="https://i.imgur.com/EMHAiAn.gif" />|`sa-spinner-circular-fixed`| <img width="70" src="https://i.imgur.com/51s9fwM.gif" />|`sa-spinner-circular-split`| <img width="70" src="https://i.imgur.com/W6U0eEt.gif" />|
-|`sa-spinner-round`   |<img width="70" src="https://i.imgur.com/X4vL9Xk.gif" />|`sa-spinner-round-outlined`|<img width="70" src="https://i.imgur.com/MN1vOVI.gif" /> |`sa-spinner-round-filled`  |<img width="70" src="https://i.imgur.com/pFjxFgP.gif" />|
-|`sa-spinner-dotted`  |<img width="70" src="https://i.imgur.com/ehh9dR4.gif" />|`sa-spinne-infinity`     |<img width="70" src="https://i.imgur.com/BG06Iib.gif" /> |`sa-spinner-diamond`      |<img width="70" src="https://i.imgur.com/X7zvUbI.gif" />|
+|`sa-spinner-circular`|<img width="70" src="https://i.imgur.com/TXXVX12.gif" />|`sa-spinner-circular-fixed`| <img width="70" src="https://i.imgur.com/NCnyifq.gif" />|`sa-spinner-circular-split`| <img width="70" src="https://i.imgur.com/JJ44o82.gif" />|
+|`sa-spinner-round`   |<img width="70" src="https://i.imgur.com/Sx7gh0D.gif" />|`sa-spinner-round-outlined`|<img width="70" src="https://i.imgur.com/smEIw8n.gif" /> |`sa-spinner-round-filled`  |<img width="70" src="https://i.imgur.com/rF3ogJ5.gif" />|
+|`sa-spinner-dotted`  |<img width="70" src="https://i.imgur.com/ZWBUC6P.gif" />|`sa-spinne-infinity`     |<img width="70" src="https://i.imgur.com/wLgV52R.gif" /> |`sa-spinner-diamond`      |<img width="70" src="https://i.imgur.com/lhkmiLf.gif" />|
 
 ## Properties
 The following optional properties are available.
