@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="http://adexin.github.io/spinners/angular">
-    <img src="https://i.imgur.com/3n0wCwk.gif" />
+    <img src="https://i.imgur.com/Sv5vNTU.gif" />
   </a>
 </p>
 
@@ -57,9 +57,9 @@ For angular element
 
 | Component | Example | Component | Example | Component | Example |
 |-----------|---------|-----------|---------|-----------|---------|
-|`sa-spinner-circular`|<img width="70" src="https://i.imgur.com/o89jDAP.gif" />|`sa-spinner-circular-fixed`| <img width="70" src="https://i.imgur.com/tTAGJCm.gif" />|`sa-spinner-circular-split`| <img width="70" src="https://i.imgur.com/bnmc9Ww.gif" />|
-|`sa-spinner-round`   |<img width="70" src="https://i.imgur.com/ankNNb4.gif" />|`sa-spinner-round-outlined`|<img width="70" src="https://i.imgur.com/EGAQ1zI.gif" /> |`sa-spinner-round-filled`  |<img width="70" src="https://i.imgur.com/izh0T8z.gif" />|
-|`sa-spinner-dotted`  |<img width="70" src="https://i.imgur.com/PRsEM0Y.gif" />|`sa-spinne-infinity`     |<img width="70" src="https://i.imgur.com/gdvE3yw.gif" /> |`sa-spinner-diamond`      |<img width="70" src="https://i.imgur.com/P2lUfRy.gif" />|
+|`sa-spinner-circular`|<img width="70" src="https://i.imgur.com/TXXVX12.gif" />|`sa-spinner-circular-fixed`| <img width="70" src="https://i.imgur.com/NCnyifq.gif" />|`sa-spinner-circular-split`| <img width="70" src="https://i.imgur.com/JJ44o82.gif" />|
+|`sa-spinner-round`   |<img width="70" src="https://i.imgur.com/Sx7gh0D.gif" />|`sa-spinner-round-outlined`|<img width="70" src="https://i.imgur.com/smEIw8n.gif" /> |`sa-spinner-round-filled`  |<img width="70" src="https://i.imgur.com/rF3ogJ5.gif" />|
+|`sa-spinner-dotted`  |<img width="70" src="https://i.imgur.com/ZWBUC6P.gif" />|`sa-spinne-infinity`     |<img width="70" src="https://i.imgur.com/wLgV52R.gif" /> |`sa-spinner-diamond`      |<img width="70" src="https://i.imgur.com/lhkmiLf.gif" />|
 
 ## Properties
 The following optional properties are available.
