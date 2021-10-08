@@ -1,4 +1,4 @@
-import { Injector, NgModule, enableProdMode } from '@angular/core';
+import { DoBootstrap, Injector, NgModule, enableProdMode } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -9,25 +9,25 @@ import { SpinnerDiamondComponent } from 'spinners-angular/spinner-diamond';
 const element = 'sa-spinner-diamond';
 
 @NgModule({
-  imports: [ BrowserModule ]
+    imports: [ BrowserModule ]
 })
-class SpinnerDiamondElementModule {
-  constructor(private injector: Injector) {}
+class SpinnerDiamondElementModule implements DoBootstrap {
+    constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
-    if (!customElements.get(element)) {
-      customElements.define(
-        element,
-        createCustomElement(SpinnerDiamondComponent, { injector: this.injector })
-      );
+    ngDoBootstrap() {
+        if (!customElements.get(element)) {
+            customElements.define(
+                element,
+                createCustomElement(SpinnerDiamondComponent, { injector: this.injector })
+            );
+        }
     }
-  }
 }
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
 platformBrowserDynamic()
-  .bootstrapModule(SpinnerDiamondElementModule)
-  .catch(err => console.error(err));
+    .bootstrapModule(SpinnerDiamondElementModule)
+    .catch(err => console.error(err));

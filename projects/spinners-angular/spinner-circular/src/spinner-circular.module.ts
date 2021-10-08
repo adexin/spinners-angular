@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SpinnerCircularComponent } from './spinner-circular.component';
 
 @NgModule({
-  imports: [BrowserModule],
-  declarations: [SpinnerCircularComponent],
-  exports: [SpinnerCircularComponent],
+    imports: [BrowserModule],
+    declarations: [SpinnerCircularComponent],
+    exports: [SpinnerCircularComponent],
 })
 export class SpinnerCircularModule {}

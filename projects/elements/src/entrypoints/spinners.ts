@@ -1,4 +1,4 @@
-import { Injector, NgModule, enableProdMode } from '@angular/core';
+import { DoBootstrap, Injector, NgModule, enableProdMode } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -15,36 +15,36 @@ import { SpinnerRoundFilledComponent } from 'spinners-angular/spinner-round-fill
 import { SpinnerRoundOutlinedComponent } from 'spinners-angular/spinner-round-outlined';
 
 const spinners = {
-  'sa-spinner-circular': SpinnerCircularComponent,
-  'sa-spinner-circular-fixed': SpinnerCircularFixedComponent,
-  'sa-spinner-circular-split': SpinnerCircularSplitComponent,
-  'sa-spinner-dotted': SpinnerDottedComponent,
-  'sa-spinner-infinity': SpinnerInfinityComponent,
-  'sa-spinner-diamond': SpinnerDiamondComponent,
-  'sa-spinner-round': SpinnerRoundComponent,
-  'sa-spinner-round-filled': SpinnerRoundFilledComponent,
-  'sa-spinner-round-outlined': SpinnerRoundOutlinedComponent,
+    'sa-spinner-circular': SpinnerCircularComponent,
+    'sa-spinner-circular-fixed': SpinnerCircularFixedComponent,
+    'sa-spinner-circular-split': SpinnerCircularSplitComponent,
+    'sa-spinner-dotted': SpinnerDottedComponent,
+    'sa-spinner-infinity': SpinnerInfinityComponent,
+    'sa-spinner-diamond': SpinnerDiamondComponent,
+    'sa-spinner-round': SpinnerRoundComponent,
+    'sa-spinner-round-filled': SpinnerRoundFilledComponent,
+    'sa-spinner-round-outlined': SpinnerRoundOutlinedComponent,
 };
 
 @NgModule({
-  imports: [ BrowserModule ]
+    imports: [ BrowserModule ]
 })
-class AppModule {
-  constructor(private injector: Injector) {}
+class AppModule implements DoBootstrap {
+    constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
-    Object.keys(spinners).forEach(k => {
-      if (!customElements.get(k)) {
-        customElements.define(k, createCustomElement(spinners[k], { injector: this.injector }));
-      }
-    });
-  }
+    ngDoBootstrap() {
+        Object.keys(spinners).forEach(k => {
+            if (!customElements.get(k)) {
+                customElements.define(k, createCustomElement(spinners[k], { injector: this.injector }));
+            }
+        });
+    }
 }
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
 platformBrowserDynamic()
-  .bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+    .bootstrapModule(AppModule)
+    .catch(err => console.error(err));

@@ -1,4 +1,4 @@
-import { Injector, NgModule, enableProdMode } from '@angular/core';
+import { DoBootstrap, Injector, NgModule, enableProdMode } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -9,25 +9,25 @@ import { SpinnerCircularSplitComponent } from 'spinners-angular/spinner-circular
 const element = 'sa-spinner-circular-split';
 
 @NgModule({
-  imports: [ BrowserModule ]
+    imports: [ BrowserModule ]
 })
-class SpinnerCircularSplitElementModule {
-  constructor(private injector: Injector) {}
+class SpinnerCircularSplitElementModule implements DoBootstrap {
+    constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
-    if (!customElements.get(element)) {
-      customElements.define(
-        element,
-        createCustomElement(SpinnerCircularSplitComponent, { injector: this.injector })
-      );
+    ngDoBootstrap() {
+        if (!customElements.get(element)) {
+            customElements.define(
+                element,
+                createCustomElement(SpinnerCircularSplitComponent, { injector: this.injector })
+            );
+        }
     }
-  }
 }
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
 platformBrowserDynamic()
-  .bootstrapModule(SpinnerCircularSplitElementModule)
-  .catch(err => console.error(err));
+    .bootstrapModule(SpinnerCircularSplitElementModule)
+    .catch(err => console.error(err));

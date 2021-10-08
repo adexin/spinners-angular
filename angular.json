@@ -30,14 +30,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/spinners-angular/tsconfig.lib.json",
-              "projects/spinners-angular/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/spinners-angular/**/*.ts",
+              "projects/spinners-angular/**/*.html"
             ]
           }
         }
@@ -132,19 +129,19 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/elements/tsconfig.app.json",
-              "projects/elements/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/elements/**/*.ts",
+              "projects/elements/**/*.html"
             ]
           }
         }
       }
     }
   },
-  "defaultProject": "spinners-angular"
+  "defaultProject": "spinners-angular",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
