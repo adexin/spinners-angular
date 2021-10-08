@@ -35,9 +35,11 @@
   "contributors": [],
   "license": "MIT",
   "homepage": "demo.adexin.com/spinners/angular",
+  "devDependencies": {
+    "tslib": "^1.10.0"
+  },
   "peerDependencies": {
     "@angular/common": ">=9",
-    "@angular/core": ">=9",
-    "tslib": "^1.10.0"
+    "@angular/core": ">=9"
   }
 }

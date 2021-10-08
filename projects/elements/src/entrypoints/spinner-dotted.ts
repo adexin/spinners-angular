@@ -1,4 +1,4 @@
-import { Injector, NgModule, enableProdMode } from '@angular/core';
+import { DoBootstrap, Injector, NgModule, enableProdMode } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -9,25 +9,25 @@ import { SpinnerDottedComponent } from 'spinners-angular/spinner-dotted';
 const element = 'sa-spinner-dotted';
 
 @NgModule({
-  imports: [ BrowserModule ]
+    imports: [ BrowserModule ]
 })
-class SpinnerDottedElementModule {
-  constructor(private injector: Injector) {}
+class SpinnerDottedElementModule implements DoBootstrap {
+    constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
-    if (!customElements.get(element)) {
-      customElements.define(
-        element,
-        createCustomElement(SpinnerDottedComponent, { injector: this.injector })
-      );
+    ngDoBootstrap() {
+        if (!customElements.get(element)) {
+            customElements.define(
+                element,
+                createCustomElement(SpinnerDottedComponent, { injector: this.injector })
+            );
+        }
     }
-  }
 }
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
 platformBrowserDynamic()
-  .bootstrapModule(SpinnerDottedElementModule)
-  .catch(err => console.error(err));
+    .bootstrapModule(SpinnerDottedElementModule)
+    .catch(err => console.error(err));

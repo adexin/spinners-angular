@@ -11,16 +11,16 @@ import { SpinnerRoundFilledModule } from 'spinners-angular/spinner-round-filled'
 import { SpinnerRoundOutlinedModule } from 'spinners-angular/spinner-round-outlined';
 
 @NgModule({
-  exports: [
-    SpinnerCircularModule,
-    SpinnerCircularFixedModule,
-    SpinnerCircularSplitModule,
-    SpinnerDottedModule,
-    SpinnerInfinityModule,
-    SpinnerDiamondModule,
-    SpinnerRoundModule,
-    SpinnerRoundFilledModule,
-    SpinnerRoundOutlinedModule,
-  ],
+    exports: [
+        SpinnerCircularModule,
+        SpinnerCircularFixedModule,
+        SpinnerCircularSplitModule,
+        SpinnerDottedModule,
+        SpinnerInfinityModule,
+        SpinnerDiamondModule,
+        SpinnerRoundModule,
+        SpinnerRoundFilledModule,
+        SpinnerRoundOutlinedModule,
+    ],
 })
 export class SpinnersAngularModule {}

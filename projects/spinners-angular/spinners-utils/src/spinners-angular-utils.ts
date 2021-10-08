@@ -11,13 +11,13 @@ export class SpinnerComponent {
   @Input() thickness = 100;
 
   get svgStyle() {
-    return {
-      color: this.color,
-      overflow: 'visible',
-      width: normalizeSize(this.size),
-      height: normalizeSize(this.size),
-      ...(typeof this.styles === 'string' ? JSON.parse(this.styles) : this.styles),
-    };
+      return {
+          color: this.color,
+          overflow: 'visible',
+          width: normalizeSize(this.size),
+          height: normalizeSize(this.size),
+          ...(typeof this.styles === 'string' ? JSON.parse(this.styles) : this.styles),
+      };
   }
 }
 
@@ -26,7 +26,7 @@ export class SpinnerComponentWithSecondaryColor extends SpinnerComponent {
 }
 
 export const normalizeSize = (size: number | string) =>
-  (parseFloat(size.toString()).toString() === size.toString()
-    ? `${size}px`
-    : size.toString());
+    (parseFloat(size.toString()).toString() === size.toString()
+        ? `${size}px`
+        : size.toString());
 

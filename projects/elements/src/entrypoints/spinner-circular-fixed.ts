@@ -1,4 +1,4 @@
-import { Injector, NgModule, enableProdMode } from '@angular/core';
+import { DoBootstrap, Injector, NgModule, enableProdMode } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -9,25 +9,25 @@ import { SpinnerCircularFixedComponent } from 'spinners-angular/spinner-circular
 const element = 'sa-spinner-circular-fixed';
 
 @NgModule({
-  imports: [ BrowserModule ]
+    imports: [ BrowserModule ]
 })
-class SpinnerCircularFixedElementModule {
-  constructor(private injector: Injector) {}
+class SpinnerCircularFixedElementModule implements DoBootstrap {
+    constructor(private injector: Injector) {}
 
-  ngDoBootstrap() {
-    if (!customElements.get(element)) {
-      customElements.define(
-        element,
-        createCustomElement(SpinnerCircularFixedComponent, { injector: this.injector })
-      );
+    ngDoBootstrap() {
+        if (!customElements.get(element)) {
+            customElements.define(
+                element,
+                createCustomElement(SpinnerCircularFixedComponent, { injector: this.injector })
+            );
+        }
     }
-  }
 }
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
 platformBrowserDynamic()
-  .bootstrapModule(SpinnerCircularFixedElementModule)
-  .catch(err => console.error(err));
+    .bootstrapModule(SpinnerCircularFixedElementModule)
+    .catch(err => console.error(err));

@@ -1,0 +1,48 @@
+{
+  "extends": "../../.eslintrc.json",
+  "ignorePatterns": [
+    "!**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "projects/spinners-angular/tsconfig.lib.json",
+          "projects/spinners-angular/tsconfig.spec.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "rules": {
+        "dot-notation": "error",
+        "id-denylist": [
+          "error",
+          "any",
+          "Number",
+          "number",
+          "String",
+          "string",
+          "Boolean",
+          "boolean",
+          "Undefined",
+          "undefined"
+        ],
+        "indent": "error",
+        "no-empty-function": "off",
+        "no-shadow": "error",
+        "no-unused-expressions": "error",
+        "no-use-before-define": "off",
+        "quotes": "error",
+        "semi": "error"
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "rules": {}
+    }
+  ]
+}
